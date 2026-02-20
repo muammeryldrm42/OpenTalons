@@ -1,0 +1,12 @@
+{
+  "name": "config-audit",
+  "version": "0.1.0",
+  "category": "dev",
+  "permissions": [
+    "fs:read"
+  ],
+  "tags": [
+    "dev",
+    "dev"
+  ]
+}

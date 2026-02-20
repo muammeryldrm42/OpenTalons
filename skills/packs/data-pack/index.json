@@ -1,0 +1,188 @@
+{
+  "pack": "data-pack",
+  "skills": [
+    {
+      "slug": "csv-profiler",
+      "name": "Csv Profiler",
+      "version": "0.1.0",
+      "category": "data",
+      "permissions": [
+        "fs:read"
+      ]
+    },
+    {
+      "slug": "json-normalizer",
+      "name": "Json Normalizer",
+      "version": "0.1.0",
+      "category": "data",
+      "permissions": [
+        "fs:read"
+      ]
+    },
+    {
+      "slug": "schema-infer",
+      "name": "Schema Infer",
+      "version": "0.1.0",
+      "category": "data",
+      "permissions": [
+        "fs:read"
+      ]
+    },
+    {
+      "slug": "dedupe-records",
+      "name": "Dedupe Records",
+      "version": "0.1.0",
+      "category": "data",
+      "permissions": []
+    },
+    {
+      "slug": "anomaly-scan",
+      "name": "Anomaly Scan",
+      "version": "0.1.0",
+      "category": "data",
+      "permissions": []
+    },
+    {
+      "slug": "report-builder",
+      "name": "Report Builder",
+      "version": "0.1.0",
+      "category": "data",
+      "permissions": [
+        "fs:read"
+      ]
+    },
+    {
+      "slug": "format-converter",
+      "name": "Format Converter",
+      "version": "0.1.0",
+      "category": "data",
+      "permissions": []
+    },
+    {
+      "slug": "data-quality-check",
+      "name": "Data Quality Check",
+      "version": "0.1.0",
+      "category": "data",
+      "permissions": []
+    },
+    {
+      "slug": "join-helper",
+      "name": "Join Helper",
+      "version": "0.1.0",
+      "category": "data",
+      "permissions": []
+    },
+    {
+      "slug": "etl-outline",
+      "name": "Etl Outline",
+      "version": "0.1.0",
+      "category": "data",
+      "permissions": []
+    },
+    {
+      "slug": "data-skill-001",
+      "name": "Data Skill 001",
+      "version": "0.1.0",
+      "category": "data",
+      "permissions": []
+    },
+    {
+      "slug": "data-skill-002",
+      "name": "Data Skill 002",
+      "version": "0.1.0",
+      "category": "data",
+      "permissions": []
+    },
+    {
+      "slug": "data-skill-003",
+      "name": "Data Skill 003",
+      "version": "0.1.0",
+      "category": "data",
+      "permissions": []
+    },
+    {
+      "slug": "data-skill-004",
+      "name": "Data Skill 004",
+      "version": "0.1.0",
+      "category": "data",
+      "permissions": []
+    },
+    {
+      "slug": "data-skill-005",
+      "name": "Data Skill 005",
+      "version": "0.1.0",
+      "category": "data",
+      "permissions": []
+    },
+    {
+      "slug": "data-skill-006",
+      "name": "Data Skill 006",
+      "version": "0.1.0",
+      "category": "data",
+      "permissions": []
+    },
+    {
+      "slug": "data-skill-007",
+      "name": "Data Skill 007",
+      "version": "0.1.0",
+      "category": "data",
+      "permissions": []
+    },
+    {
+      "slug": "data-skill-008",
+      "name": "Data Skill 008",
+      "version": "0.1.0",
+      "category": "data",
+      "permissions": []
+    },
+    {
+      "slug": "data-skill-009",
+      "name": "Data Skill 009",
+      "version": "0.1.0",
+      "category": "data",
+      "permissions": []
+    },
+    {
+      "slug": "data-skill-010",
+      "name": "Data Skill 010",
+      "version": "0.1.0",
+      "category": "data",
+      "permissions": []
+    },
+    {
+      "slug": "data-skill-011",
+      "name": "Data Skill 011",
+      "version": "0.1.0",
+      "category": "data",
+      "permissions": []
+    },
+    {
+      "slug": "data-skill-012",
+      "name": "Data Skill 012",
+      "version": "0.1.0",
+      "category": "data",
+      "permissions": []
+    },
+    {
+      "slug": "data-skill-013",
+      "name": "Data Skill 013",
+      "version": "0.1.0",
+      "category": "data",
+      "permissions": []
+    },
+    {
+      "slug": "data-skill-014",
+      "name": "Data Skill 014",
+      "version": "0.1.0",
+      "category": "data",
+      "permissions": []
+    },
+    {
+      "slug": "data-skill-015",
+      "name": "Data Skill 015",
+      "version": "0.1.0",
+      "category": "data",
+      "permissions": []
+    }
+  ]
+}

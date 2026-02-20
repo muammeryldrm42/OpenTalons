@@ -1,0 +1,1 @@
+import { describe,it,expect } from 'vitest'; import { PolicyEngine } from '@opentalons/core'; describe('policy',()=>it('blocks',()=>{const p=new PolicyEngine({profile:'solo',limits:{timeoutMs:1,maxToolOutputBytes:1}} as any); const d=p.decide({tool:'net.fetch',args:{url:'https://x.com'}} as any, [] as any); expect(d.allow).toBe(false);}));

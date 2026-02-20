@@ -1,0 +1,12 @@
+{
+  "name": "dependency-audit-summary",
+  "version": "0.1.0",
+  "category": "dev",
+  "permissions": [
+    "fs:read"
+  ],
+  "tags": [
+    "dev",
+    "dev"
+  ]
+}

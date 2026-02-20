@@ -1,0 +1,1 @@
+import { describe,it,expect } from 'vitest'; import path from 'node:path'; import { loadPackIndex } from './index.js'; describe('loader',()=>it('loads',async()=>{const idx=await loadPackIndex(path.join(process.cwd(),'skills','packs','research-pack')); expect(idx.pack).toBe('research-pack');}));

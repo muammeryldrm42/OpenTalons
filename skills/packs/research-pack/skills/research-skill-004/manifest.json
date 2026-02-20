@@ -1,0 +1,12 @@
+{
+  "name": "research-skill-004",
+  "version": "0.1.0",
+  "category": "research",
+  "permissions": [
+    "net:read"
+  ],
+  "tags": [
+    "research",
+    "research"
+  ]
+}

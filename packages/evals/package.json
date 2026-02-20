@@ -1,0 +1,19 @@
+{
+  "name": "@opentalons/evals",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "build": "echo evals",
+    "lint": "echo evals",
+    "test": "vitest run",
+    "clean": "echo evals"
+  },
+  "dependencies": {
+    "@opentalons/core": "workspace:*"
+  },
+  "devDependencies": {
+    "vitest": "^2.1.8",
+    "typescript": "^5.6.3"
+  }
+}

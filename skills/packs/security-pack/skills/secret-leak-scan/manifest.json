@@ -1,0 +1,12 @@
+{
+  "name": "secret-leak-scan",
+  "version": "0.1.0",
+  "category": "security",
+  "permissions": [
+    "fs:read"
+  ],
+  "tags": [
+    "security",
+    "security"
+  ]
+}

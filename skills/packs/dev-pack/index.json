@@ -1,0 +1,264 @@
+{
+  "pack": "dev-pack",
+  "skills": [
+    {
+      "slug": "repo-architecture-summary",
+      "name": "Repo Architecture Summary",
+      "version": "0.1.0",
+      "category": "dev",
+      "permissions": [
+        "fs:read"
+      ]
+    },
+    {
+      "slug": "dependency-audit-summary",
+      "name": "Dependency Audit Summary",
+      "version": "0.1.0",
+      "category": "dev",
+      "permissions": [
+        "fs:read"
+      ]
+    },
+    {
+      "slug": "changelog-generator",
+      "name": "Changelog Generator",
+      "version": "0.1.0",
+      "category": "dev",
+      "permissions": [
+        "fs:read"
+      ]
+    },
+    {
+      "slug": "log-triage",
+      "name": "Log Triage",
+      "version": "0.1.0",
+      "category": "dev",
+      "permissions": [
+        "fs:read"
+      ]
+    },
+    {
+      "slug": "security-review-checklist",
+      "name": "Security Review Checklist",
+      "version": "0.1.0",
+      "category": "dev",
+      "permissions": []
+    },
+    {
+      "slug": "test-plan-generator",
+      "name": "Test Plan Generator",
+      "version": "0.1.0",
+      "category": "dev",
+      "permissions": []
+    },
+    {
+      "slug": "api-doc-generator",
+      "name": "Api Doc Generator",
+      "version": "0.1.0",
+      "category": "dev",
+      "permissions": [
+        "fs:read"
+      ]
+    },
+    {
+      "slug": "issue-triage",
+      "name": "Issue Triage",
+      "version": "0.1.0",
+      "category": "dev",
+      "permissions": []
+    },
+    {
+      "slug": "readme-audit",
+      "name": "Readme Audit",
+      "version": "0.1.0",
+      "category": "dev",
+      "permissions": [
+        "fs:read"
+      ]
+    },
+    {
+      "slug": "config-audit",
+      "name": "Config Audit",
+      "version": "0.1.0",
+      "category": "dev",
+      "permissions": [
+        "fs:read"
+      ]
+    },
+    {
+      "slug": "dev-skill-001",
+      "name": "Dev Skill 001",
+      "version": "0.1.0",
+      "category": "dev",
+      "permissions": []
+    },
+    {
+      "slug": "dev-skill-002",
+      "name": "Dev Skill 002",
+      "version": "0.1.0",
+      "category": "dev",
+      "permissions": []
+    },
+    {
+      "slug": "dev-skill-003",
+      "name": "Dev Skill 003",
+      "version": "0.1.0",
+      "category": "dev",
+      "permissions": []
+    },
+    {
+      "slug": "dev-skill-004",
+      "name": "Dev Skill 004",
+      "version": "0.1.0",
+      "category": "dev",
+      "permissions": []
+    },
+    {
+      "slug": "dev-skill-005",
+      "name": "Dev Skill 005",
+      "version": "0.1.0",
+      "category": "dev",
+      "permissions": []
+    },
+    {
+      "slug": "dev-skill-006",
+      "name": "Dev Skill 006",
+      "version": "0.1.0",
+      "category": "dev",
+      "permissions": []
+    },
+    {
+      "slug": "dev-skill-007",
+      "name": "Dev Skill 007",
+      "version": "0.1.0",
+      "category": "dev",
+      "permissions": []
+    },
+    {
+      "slug": "dev-skill-008",
+      "name": "Dev Skill 008",
+      "version": "0.1.0",
+      "category": "dev",
+      "permissions": []
+    },
+    {
+      "slug": "dev-skill-009",
+      "name": "Dev Skill 009",
+      "version": "0.1.0",
+      "category": "dev",
+      "permissions": []
+    },
+    {
+      "slug": "dev-skill-010",
+      "name": "Dev Skill 010",
+      "version": "0.1.0",
+      "category": "dev",
+      "permissions": []
+    },
+    {
+      "slug": "dev-skill-011",
+      "name": "Dev Skill 011",
+      "version": "0.1.0",
+      "category": "dev",
+      "permissions": []
+    },
+    {
+      "slug": "dev-skill-012",
+      "name": "Dev Skill 012",
+      "version": "0.1.0",
+      "category": "dev",
+      "permissions": []
+    },
+    {
+      "slug": "dev-skill-013",
+      "name": "Dev Skill 013",
+      "version": "0.1.0",
+      "category": "dev",
+      "permissions": []
+    },
+    {
+      "slug": "dev-skill-014",
+      "name": "Dev Skill 014",
+      "version": "0.1.0",
+      "category": "dev",
+      "permissions": []
+    },
+    {
+      "slug": "dev-skill-015",
+      "name": "Dev Skill 015",
+      "version": "0.1.0",
+      "category": "dev",
+      "permissions": []
+    },
+    {
+      "slug": "dev-skill-016",
+      "name": "Dev Skill 016",
+      "version": "0.1.0",
+      "category": "dev",
+      "permissions": []
+    },
+    {
+      "slug": "dev-skill-017",
+      "name": "Dev Skill 017",
+      "version": "0.1.0",
+      "category": "dev",
+      "permissions": []
+    },
+    {
+      "slug": "dev-skill-018",
+      "name": "Dev Skill 018",
+      "version": "0.1.0",
+      "category": "dev",
+      "permissions": []
+    },
+    {
+      "slug": "dev-skill-019",
+      "name": "Dev Skill 019",
+      "version": "0.1.0",
+      "category": "dev",
+      "permissions": []
+    },
+    {
+      "slug": "dev-skill-020",
+      "name": "Dev Skill 020",
+      "version": "0.1.0",
+      "category": "dev",
+      "permissions": []
+    },
+    {
+      "slug": "dev-skill-021",
+      "name": "Dev Skill 021",
+      "version": "0.1.0",
+      "category": "dev",
+      "permissions": []
+    },
+    {
+      "slug": "dev-skill-022",
+      "name": "Dev Skill 022",
+      "version": "0.1.0",
+      "category": "dev",
+      "permissions": []
+    },
+    {
+      "slug": "dev-skill-023",
+      "name": "Dev Skill 023",
+      "version": "0.1.0",
+      "category": "dev",
+      "permissions": []
+    },
+    {
+      "slug": "dev-skill-024",
+      "name": "Dev Skill 024",
+      "version": "0.1.0",
+      "category": "dev",
+      "permissions": []
+    },
+    {
+      "slug": "dev-skill-025",
+      "name": "Dev Skill 025",
+      "version": "0.1.0",
+      "category": "dev",
+      "permissions": []
+    }
+  ]
+}

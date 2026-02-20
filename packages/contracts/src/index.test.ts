@@ -1,0 +1,1 @@
+import { describe,it,expect } from 'vitest'; import type { SkillManifest } from './index'; describe('contracts',()=>{it('ok',()=>{const m:SkillManifest={name:'x',version:'0.0.1',permissions:[]}; expect(m.name).toBe('x');});});
