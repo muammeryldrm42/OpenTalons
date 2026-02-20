@@ -1,0 +1,182 @@
+{
+  "pack": "security-pack",
+  "skills": [
+    {
+      "slug": "threat-model-mini",
+      "name": "Threat Model Mini",
+      "version": "0.1.0",
+      "category": "security",
+      "permissions": []
+    },
+    {
+      "slug": "permissions-review",
+      "name": "Permissions Review",
+      "version": "0.1.0",
+      "category": "security",
+      "permissions": []
+    },
+    {
+      "slug": "secret-leak-scan",
+      "name": "Secret Leak Scan",
+      "version": "0.1.0",
+      "category": "security",
+      "permissions": [
+        "fs:read"
+      ]
+    },
+    {
+      "slug": "policy-hardening-suggester",
+      "name": "Policy Hardening Suggester",
+      "version": "0.1.0",
+      "category": "security",
+      "permissions": []
+    },
+    {
+      "slug": "ssrf-guard-guidance",
+      "name": "Ssrf Guard Guidance",
+      "version": "0.1.0",
+      "category": "security",
+      "permissions": []
+    },
+    {
+      "slug": "path-traversal-check",
+      "name": "Path Traversal Check",
+      "version": "0.1.0",
+      "category": "security",
+      "permissions": []
+    },
+    {
+      "slug": "dependency-risk-note",
+      "name": "Dependency Risk Note",
+      "version": "0.1.0",
+      "category": "security",
+      "permissions": []
+    },
+    {
+      "slug": "logging-redaction-review",
+      "name": "Logging Redaction Review",
+      "version": "0.1.0",
+      "category": "security",
+      "permissions": []
+    },
+    {
+      "slug": "auth-checklist",
+      "name": "Auth Checklist",
+      "version": "0.1.0",
+      "category": "security",
+      "permissions": []
+    },
+    {
+      "slug": "secure-defaults-audit",
+      "name": "Secure Defaults Audit",
+      "version": "0.1.0",
+      "category": "security",
+      "permissions": []
+    },
+    {
+      "slug": "security-skill-001",
+      "name": "Security Skill 001",
+      "version": "0.1.0",
+      "category": "security",
+      "permissions": []
+    },
+    {
+      "slug": "security-skill-002",
+      "name": "Security Skill 002",
+      "version": "0.1.0",
+      "category": "security",
+      "permissions": []
+    },
+    {
+      "slug": "security-skill-003",
+      "name": "Security Skill 003",
+      "version": "0.1.0",
+      "category": "security",
+      "permissions": []
+    },
+    {
+      "slug": "security-skill-004",
+      "name": "Security Skill 004",
+      "version": "0.1.0",
+      "category": "security",
+      "permissions": []
+    },
+    {
+      "slug": "security-skill-005",
+      "name": "Security Skill 005",
+      "version": "0.1.0",
+      "category": "security",
+      "permissions": []
+    },
+    {
+      "slug": "security-skill-006",
+      "name": "Security Skill 006",
+      "version": "0.1.0",
+      "category": "security",
+      "permissions": []
+    },
+    {
+      "slug": "security-skill-007",
+      "name": "Security Skill 007",
+      "version": "0.1.0",
+      "category": "security",
+      "permissions": []
+    },
+    {
+      "slug": "security-skill-008",
+      "name": "Security Skill 008",
+      "version": "0.1.0",
+      "category": "security",
+      "permissions": []
+    },
+    {
+      "slug": "security-skill-009",
+      "name": "Security Skill 009",
+      "version": "0.1.0",
+      "category": "security",
+      "permissions": []
+    },
+    {
+      "slug": "security-skill-010",
+      "name": "Security Skill 010",
+      "version": "0.1.0",
+      "category": "security",
+      "permissions": []
+    },
+    {
+      "slug": "security-skill-011",
+      "name": "Security Skill 011",
+      "version": "0.1.0",
+      "category": "security",
+      "permissions": []
+    },
+    {
+      "slug": "security-skill-012",
+      "name": "Security Skill 012",
+      "version": "0.1.0",
+      "category": "security",
+      "permissions": []
+    },
+    {
+      "slug": "security-skill-013",
+      "name": "Security Skill 013",
+      "version": "0.1.0",
+      "category": "security",
+      "permissions": []
+    },
+    {
+      "slug": "security-skill-014",
+      "name": "Security Skill 014",
+      "version": "0.1.0",
+      "category": "security",
+      "permissions": []
+    },
+    {
+      "slug": "security-skill-015",
+      "name": "Security Skill 015",
+      "version": "0.1.0",
+      "category": "security",
+      "permissions": []
+    }
+  ]
+}

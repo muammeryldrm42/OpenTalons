@@ -1,0 +1,12 @@
+{
+  "name": "news-digest",
+  "version": "0.1.0",
+  "category": "research",
+  "permissions": [
+    "net:read"
+  ],
+  "tags": [
+    "research",
+    "research"
+  ]
+}

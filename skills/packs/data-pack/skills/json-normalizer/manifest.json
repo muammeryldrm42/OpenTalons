@@ -1,0 +1,12 @@
+{
+  "name": "json-normalizer",
+  "version": "0.1.0",
+  "category": "data",
+  "permissions": [
+    "fs:read"
+  ],
+  "tags": [
+    "data",
+    "data"
+  ]
+}

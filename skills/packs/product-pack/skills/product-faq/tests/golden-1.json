@@ -1,0 +1,8 @@
+{
+  "input": {
+    "input": "example"
+  },
+  "expects": {
+    "type": "object"
+  }
+}
