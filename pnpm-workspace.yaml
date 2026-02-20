@@ -1,5 +1,9 @@
 packages:
-  - "."
-  - "ui"
-  - "packages/*"
-  - "extensions/*"
+  - .
+  - ui
+  - packages/*
+  - extensions/*
+
+ignoredBuiltDependencies:
+  - esbuild
+  - sharp

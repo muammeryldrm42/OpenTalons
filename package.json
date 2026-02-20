@@ -12,5 +12,8 @@
     "lint": "pnpm -r lint",
     "test": "pnpm -r test",
     "clean": "pnpm -r clean"
+  },
+  "devDependencies": {
+    "@types/node": "25.3.0"
   }
 }
