@@ -47,3 +47,13 @@ print(finished["status"])
 3. Persistent DB store (PostgreSQL/SQLite)
 4. Real LLM providers + tool sandbox
 5. Multi-agent planner/executor mode
+
+## Conflict/Resolve Kolaylığı
+
+`main` ile branch farkı açıldığında manuel conflict çözmek zorunda kalmamak için:
+
+```bash
+scripts/sync_with_main.sh origin main
+```
+
+Detaylı akış için `CONTRIBUTING.md` dosyasına bak.

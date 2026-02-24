@@ -2,7 +2,7 @@ from __future__ import annotations
 
 from opentalons.config import settings
 from opentalons.models import TaskPlan, TaskRecord, TaskRequest, TaskResult, TaskStatus, ToolCall
-from opentalons.providers import get_provider
+from opentalons.providers import resolve_provider
 from opentalons.providers.base import Provider
 from opentalons.store import TaskStore
 from opentalons.tools import ToolRegistry
@@ -17,7 +17,7 @@ class Orchestrator:
         store: TaskStore | None = None,
         tools: ToolRegistry | None = None,
     ) -> None:
-        self.provider = provider or get_provider(settings.default_provider)
+        self.provider = provider or resolve_provider(settings.default_provider, fallback="mock")
         self.store = store or TaskStore()
         self.tools = tools or ToolRegistry()
 

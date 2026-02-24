@@ -30,3 +30,11 @@ def test_task_lifecycle_create_execute_get() -> None:
 def test_task_request_validation() -> None:
     request = TaskRequest(goal="Build roadmap")
     assert request.goal == "Build roadmap"
+
+
+from opentalons.providers import resolve_provider
+
+
+def test_resolve_provider_fallback_for_invalid_name() -> None:
+    provider = resolve_provider("nonexistent-provider", fallback="mock")
+    assert provider.name == "mock"
