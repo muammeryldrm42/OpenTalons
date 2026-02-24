@@ -57,3 +57,6 @@ scripts/sync_with_main.sh origin main
 ```
 
 Detaylı akış için `CONTRIBUTING.md` dosyasına bak. Rebase için `sync_with_main.sh`, aktif conflict ekranları için `resolve_conflicts_now.sh` kullan.
+
+
+GitHub üstünden PR conflict'lerini tek tık çözmek için Actions içindeki **Autofix PR conflicts** workflow'unu `pr_number` ile çalıştırabilirsin.

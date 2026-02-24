@@ -36,6 +36,18 @@ scripts/resolve_conflicts_now.sh --dry-run
 
 Bu script açık olan merge/rebase/cherry-pick durumundaki `U` dosyalarını tek seferde kural bazlı çözer ve uygun durumda `--continue` komutunu dener.
 
+### 3) GitHub üstünden tek tık çözüm (manual workflow)
+
+Repo sahibiysen Actions -> **Autofix PR conflicts** workflow'unu çalıştır:
+
+- `pr_number` gir
+- workflow ilgili PR branch'ini checkout eder
+- base branch ile merge eder
+- conflict olursa kurallı şekilde çözer
+- branch'e otomatik push atar
+
+Kullanılan script: `scripts/autofix_pr_conflicts.sh`
+
 ## Config resolution guardrails
 
 Provider config her zaman geçerli olmayabilir. Bu yüzden orchestrator, provider çözümünde fallback uygular:
