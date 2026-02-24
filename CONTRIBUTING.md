@@ -17,7 +17,8 @@ Script şunları yapar:
    - `README.md` ve `tests/*`: `theirs`
    - `src/opentalons/*`: `ours`
    - Diğerleri: `ours`
-5. Rebase'e devam eder
+5. Rebase birden fazla committe tekrar conflict verirse otomatik döngü ile her turu çözer
+6. Rebase tamamlandığında durur
 
 > Not: Bu policy ekip tercihine göre değiştirilebilir. Amaç, her PR’da manuel çözüm yükünü azaltmaktır.
 

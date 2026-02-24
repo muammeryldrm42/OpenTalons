@@ -56,4 +56,4 @@ print(finished["status"])
 scripts/sync_with_main.sh origin main
 ```
 
-Detaylı akış için `CONTRIBUTING.md` dosyasına bak.
+Detaylı akış için `CONTRIBUTING.md` dosyasına bak. Script, bir rebase içinde birden fazla conflict turunu otomatik çözer.

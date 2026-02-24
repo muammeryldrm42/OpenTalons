@@ -32,26 +32,51 @@ if git rebase "$REMOTE/$BASE_BRANCH"; then
   exit 0
 fi
 
-echo "==> Conflict detected, applying deterministic auto-resolution rules"
-while IFS= read -r file; do
-  case "$file" in
-    README.md|tests/*)
-      git checkout --theirs -- "$file"
-      ;;
-    src/opentalons/*)
-      git checkout --ours -- "$file"
-      ;;
-    *)
-      # prefer ours by default for app-specific content
-      git checkout --ours -- "$file"
-      ;;
-  esac
-  git add "$file"
-done < <(git diff --name-only --diff-filter=U)
+resolve_conflicts() {
+  local unresolved
+  unresolved="$(git diff --name-only --diff-filter=U)"
+  if [[ -z "$unresolved" ]]; then
+    return 1
+  fi
 
-if git rebase --continue; then
-  echo "Rebase continued after auto-resolution."
-else
+  echo "==> Conflict detected, applying deterministic auto-resolution rules"
+  while IFS= read -r file; do
+    [[ -z "$file" ]] && continue
+    case "$file" in
+      README.md|tests/*)
+        git checkout --theirs -- "$file"
+        ;;
+      src/opentalons/*)
+        git checkout --ours -- "$file"
+        ;;
+      *)
+        # Prefer ours by default for app-specific content.
+        git checkout --ours -- "$file"
+        ;;
+    esac
+    git add "$file"
+  done <<< "$unresolved"
+  return 0
+}
+
+# A rebase with multiple commits can stop several times.
+# Keep auto-resolving until rebase finishes or cannot continue.
+while true; do
+  if ! resolve_conflicts; then
+    echo "No unresolved conflict files found, cannot continue automatically." >&2
+    exit 2
+  fi
+
+  if git rebase --continue; then
+    echo "Rebase completed after auto-resolution."
+    exit 0
+  fi
+
+  if [[ -d .git/rebase-merge || -d .git/rebase-apply ]]; then
+    echo "Rebase has more conflicts; retrying auto-resolution..."
+    continue
+  fi
+
   echo "Unable to auto-resolve all conflicts. Please run: git status" >&2
   exit 2
-fi
+done
