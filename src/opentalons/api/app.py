@@ -4,6 +4,7 @@ from dataclasses import asdict
 
 from opentalons.models import TaskRecord, TaskRequest
 from opentalons.orchestrator import Orchestrator
+from opentalons.providers import list_provider_names
 
 
 class OpenTalonsAPI:
@@ -12,8 +13,13 @@ class OpenTalonsAPI:
     def __init__(self, orchestrator: Orchestrator | None = None) -> None:
         self.orchestrator = orchestrator or Orchestrator()
 
-    def health(self) -> dict[str, str]:
-        return {"status": "ok"}
+    def health(self) -> dict[str, object]:
+        return {
+            "status": "ok",
+            "provider": self.orchestrator.provider_name,
+            "available_providers": list_provider_names(),
+            "environment": self.orchestrator.settings.environment,
+        }
 
     def create_task(self, goal: str, context: str | None = None) -> dict[str, object]:
         record = self.orchestrator.submit(TaskRequest(goal=goal, context=context))

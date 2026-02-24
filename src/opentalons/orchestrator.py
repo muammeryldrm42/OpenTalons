@@ -1,6 +1,6 @@
 from __future__ import annotations
 
-from opentalons.config import settings
+from opentalons.config import Settings, settings
 from opentalons.models import TaskPlan, TaskRecord, TaskRequest, TaskResult, TaskStatus, ToolCall
 from opentalons.providers import resolve_provider
 from opentalons.providers.base import Provider
@@ -16,8 +16,17 @@ class Orchestrator:
         provider: Provider | None = None,
         store: TaskStore | None = None,
         tools: ToolRegistry | None = None,
+        runtime_settings: Settings | None = None,
     ) -> None:
-        self.provider = provider or resolve_provider(settings.default_provider, fallback="mock")
+        self.settings = runtime_settings or settings
+        if provider is None:
+            resolved_provider, resolved_name = resolve_provider(self.settings.default_provider, fallback="mock")
+            self.provider = resolved_provider
+            self.provider_name = resolved_name
+        else:
+            self.provider = provider
+            self.provider_name = provider.name
+
         self.store = store or TaskStore()
         self.tools = tools or ToolRegistry()
 
@@ -32,7 +41,7 @@ class Orchestrator:
             goal=request.goal,
             plan=plan,
             output=output,
-            provider=self.provider.name,
+            provider=self.provider_name,
             tool_calls=tool_calls,
         )
 
@@ -51,10 +60,11 @@ class Orchestrator:
 
     def _auto_tool_calls(self, request: TaskRequest, plan: TaskPlan) -> list[ToolCall]:
         tool_calls: list[ToolCall] = []
-        checklist_input = {"steps": "\n".join(f"- {s}" for s in plan.steps)}
+        checklist_input = {"steps": "\n".join(f"- {step}" for step in plan.steps)}
         if self.tools.has_tool("checklist"):
             self.tools.run_tool("checklist", checklist_input)
             tool_calls.append(ToolCall(tool_name="checklist", arguments=checklist_input))
+
         if self.tools.has_tool("risk_scan"):
             risk_input = {"goal": request.goal}
             self.tools.run_tool("risk_scan", risk_input)

@@ -11,11 +11,16 @@ class Settings:
     default_provider: str = "mock"
 
 
+def _normalize(value: str | None, default: str) -> str:
+    normalized = (value or "").strip()
+    return normalized if normalized else default
+
+
 def load_settings() -> Settings:
     return Settings(
-        app_name=os.getenv("OPENTALONS_APP_NAME", "OpenTalons"),
-        environment=os.getenv("OPENTALONS_ENVIRONMENT", "dev"),
-        default_provider=os.getenv("OPENTALONS_DEFAULT_PROVIDER", "mock"),
+        app_name=_normalize(os.getenv("OPENTALONS_APP_NAME"), "OpenTalons"),
+        environment=_normalize(os.getenv("OPENTALONS_ENVIRONMENT"), "dev"),
+        default_provider=_normalize(os.getenv("OPENTALONS_DEFAULT_PROVIDER"), "mock").lower(),
     )
 
 
